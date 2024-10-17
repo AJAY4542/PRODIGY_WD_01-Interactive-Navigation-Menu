@@ -1,0 +1,238 @@
+/* Global Font and Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font globally */
+}
+
+/* Body and html styling */
+body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font globally */
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333; /* Dark Charcoal Gray */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.logo img {
+    height: 35px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #ff6347; /* Tomato Red on hover */
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background-image: url('asset/hero img.jpeg'); /* Full-screen background */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the content */
+    color: white; 
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for contrast */
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* About Section */
+.about-section {
+    padding: 50px;
+    background-color: #f4f4f4; /* Light Beige Background */
+    text-align: center; /* Center the text */
+}
+
+.about-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Menu Section */
+.menu-section {
+    padding: 50px;
+    background-color: #fff; /* White Background */
+    text-align: center;
+}
+
+.menu-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Individual Menu Item Styling */
+.menu-item {
+    text-align: center;
+}
+
+.menu-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+}
+
+.menu-item p {
+    font-size: 1rem;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 50px;
+    background-color: #eee; /* Light Gray Background */
+    text-align: center;
+}
+
+.gallery-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery-images img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 50px;
+    background-color: #f4f4f4; /* Light Beige Background */
+    text-align: center;
+}
+
+.testimonials-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    color: #ff6347;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    display: inline-block;
+    text-align: left;
+}
+
+.contact-section input, .contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    padding: 10px 20px;
+    background-color: #228B22; /* Emerald Green Button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #ff6347; /* Tomato Red on hover */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+}
+.contact-section h2,.testimonials-section h2,.gallery-section h2,.about-section h2,.menu-section h2{
+ margin-bottom: 1.5rem;
+}
